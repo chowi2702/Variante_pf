@@ -43,8 +43,8 @@ with open('pipeline_final.pkl', 'rb') as f:
 pipeline_final
 
 #Cargamos los datos futuros
-data = pd.read_csv("/content/datos_futuro_vivienda.csv")
-data.head()
+#data = pd.read_csv("/content/datos_futuro_vivienda.csv")
+#data.head()
 
 import streamlit as st
 import pandas as pd
@@ -164,5 +164,5 @@ if st.button('Predecir precio'):
 Y_rf = pipeline_final.predict(data)
 print(Y_rf)
 
-data['Prediccion']=Y_rf
-data
+#data['Prediccion']=Y_rf
+#data
